@@ -1,27 +1,36 @@
 # DBImport
+Update and configure CAN related modules with **new dbc**   
+If there are many changes in CANDB, should look into [data mapping](#related-configuration).
+***
 
-## Remove DBImport
-go to Overview
+## Replace DB
+EcuExtract > Communication and Topology
 
-Select corresponding DB and Delete
+    Select and remove existing DB
+
+EcuExtract > Overview
+
+    Import DBC
+    Select whether to use E2E per message
+    Set Prefix & Signal Groups for ALL
 
 ## Import New DB
-go to EcuC
-
-Click Import DBC
-
 If you aren't gonna set E2E option, you can [**SKIP**](#harmonize) the below
 
-## Set E2E
-E2E  
-E2E  
-E2E  
-E2E  
-E2E  
-
 ## Harmonize
-Harmonize the relevant modules
+EcucValueCollection > Harmonize
+    
+    Harmonize the relevant modules (check the below)
 
+    - Can Stack
+    - Com Stack
+    - Ecuc
+    - Miscellaneous
+        - ComXf
+        - E2EXf
+
+## E2E Configuration
+E2E
 
 
 ***
