@@ -7,6 +7,7 @@ Manuals for quick **AUTOSAR** configuration
 - DBImport
 - Port config.
 - Data mapping
+- DBC cautions
 
 ### Memory
 - FEE
@@ -15,6 +16,7 @@ Manuals for quick **AUTOSAR** configuration
 ### Diagnosis
 - Dcm
 - Dem
+- Det
 
 ## ASW
 - RTE
