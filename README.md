@@ -1,13 +1,12 @@
 # README
-
-Manuals for quick **AUTOSAR** configuration
+Text manuals for **quick AUTOSAR configuration**
 
 ## Contents
 ### CAN
-- DBImport
-- Port config.
+- DB Update
+- Port Configuration
 - Data mapping
-- DBC cautions
+- E2E
 
 ### Memory
 - FEE
