@@ -34,6 +34,7 @@ Contains belows
 
 ## Caution!
     Port can be created by imported CAN message, but DataType is not updated automatically
-    So it could be possible to mismatch between data and port occur
+    So it could be possible that mismatch between data and port occur
+    Should check Interface, Port, DataType
 
 ## E2E
