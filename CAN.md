@@ -32,4 +32,8 @@ Contains belows
     Check Notification & Timeout Notification column for **Required Messages** are empty
     If empty, fill it with bulk change (patterned change)
 
+## Caution!
+    Port can be created by imported CAN message, but DataType is not updated automatically
+    So it could be possible to mismatch between data and port occur
+
 ## E2E
