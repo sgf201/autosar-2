@@ -8,24 +8,28 @@ Contains belows
 ## DB Update
 ### Import new DB
 #### EcuExtract > Communication and Topology
-Select and remove existing DB
+    Select and remove existing DB
 
 #### EcuExtract > Overview
-Import DBC  
-Select whether to use E2E per message(=SignalGroup)  
-Set Prefix & Signal Groups for ALL  
+    Import DBC
+    Select whether to use E2E per message(=SignalGroup)
+    Set Prefix & Signal Groups for ALL
 
 ### Harmonize
 #### EcuValueCollection > Generate ECU Configuration
-Harmonize a relevant modules (check the below)  
-
-- Can Stack
-- Com Stack
-- EcuC
-- Miscellaneous
-    - ComXf
-    - E2EXf
+    Harmonize a relevant modules (check the below)
+    - Can Stack
+    - Com Stack
+    - EcuC
+    - Miscellaneous
+        - ComXf
+        - E2EXf
 
 ## Data Mapping
+
+### Check Com module
+#### Com > Signal Group
+    Check Notification & Timeout Notification column for **Required Messages** are empty
+    If empty, fill it with bulk change (patterned change)
 
 ## E2E
