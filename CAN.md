@@ -13,7 +13,7 @@
 ### EcuExtract > Overview
 1. Click **Import DBC**
 1. Set Prefix & Signal Groups for ALL  
-1. Check **E2E & Category**(Normal, Diag, Xcp, Etc.) for each message(=SignalGroup)
+1. Check **E2E & Type**(Normal, Diag, Xcp, Etc.) for each message(=SignalGroup)
 1. Finish
 
 ### EcuValueCollection > Generate ECU Configuration(=Harmonize)
@@ -37,6 +37,10 @@
 1. Select specific Access Type and Click add button
 1. Add proper message from candidate
 ### Variable Access
+### When signal and properties changed(=ARXML doesn't match to DB)
+1. Copy DataTypes from DB
+1. Amend reference DataTypes of interface in ARXML
+1. Compare and modify InitVal in ARXML
 ***
 
 ## Data Mapping
@@ -50,7 +54,13 @@ If empty, fill it with bulk change (patterned change)
 ***
 
 ## Caution!
-Port can be created by imported CAN message, but DataType is not updated automatically
-So it could be possible that mismatch between data and port occur
-Should check Interface, Port, DataType
+Port can be created by imported CAN message, but DataType is not updated automatically  
+So it could be possible that mismatch between data and port occur  
+Should check Interface, Port, DataType  
+Port -> Interface -> DataTypes  
+**InitVal only reside in composition so should modify InitVal manually in constant**  
+InitVal doesn't refer to NAME, it convert list to array
+
+Interface and DataTypes are **COMMON**
+Port is **INDIVIDUAL** for SWC
 ***
