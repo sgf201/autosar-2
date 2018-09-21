@@ -30,7 +30,10 @@
 ## Port Configuration
 ### SWC_X > Ports
 1. Add port by choosing proper interface
-1. Check enable Com Specs
+1. Check enable Com Specs **AND**
+    1. Set Alive Timeout
+    1. Handle Never Received **false**
+    1. Enable Update **false**
 1. Configure proper InitVal
 ### SWC_X > Runnables
 1. Click Runnable which will use the port data
