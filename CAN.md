@@ -46,7 +46,7 @@
 ## Data Mapping
 ### EcuExtract > Data Mapping
 ### Com > Signal Group
-Check Notification & Timeout Notification column for **Required Messages** are empty
+Check Notification & Timeout Notification column for **Required Messages** are empty.  
 If empty, fill it with bulk change (patterned change)
 ***
 
@@ -54,13 +54,13 @@ If empty, fill it with bulk change (patterned change)
 ***
 
 ## Caution!
-Port can be created by imported CAN message, but DataType is not updated automatically  
-So it could be possible that mismatch between data and port occur  
+Port can be created by imported CAN message, but DataType is not updated automatically.  
+It could be possible that mismatch between data and port occur.  
 Should check Interface, Port, DataType  
 Port -> Interface -> DataTypes  
 **InitVal only reside in composition so should modify InitVal manually in constant**  
 InitVal doesn't refer to NAME, it convert list to array
 
-Interface and DataTypes are **COMMON**
+Interface and DataTypes are **COMMON**  
 Port is **INDIVIDUAL** for SWC
 ***
