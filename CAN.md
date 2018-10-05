@@ -54,6 +54,8 @@ If empty, fill it with bulk change (patterned change)
 ***
 
 ## E2E
+### Build > Generate.py
+1. add ARXML file name
 ***
 
 ## Caution!
