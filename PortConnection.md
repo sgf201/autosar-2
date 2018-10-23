@@ -1,8 +1,6 @@
 # Port Connection
-1. [SWC - Com](#SWC---Com)
-1. [Inter SWC](#Inter-SWC) (SWC-SWC)
-
-**SWC should have a port**
+1. [Data to Com](#SWC---Com)
+1. [Data to Data](#Inter-SWC)
 
 ## SWC - Com
 ### EcuExtract > Data Mapping
@@ -13,3 +11,6 @@ If empty, fill it with bulk change (patterned change)
 ## Inter SWC
 ### EcuComposition > Automatic Connection
 1. Click on **Add all** for overall auto-connection, or Select ports and Click Plus (topright) for individual connection
+### EcuComposition > Assembly Connectors
+1. Go to above, then Dangling Connectors pop-up will be shown
+1. Click on OK button
