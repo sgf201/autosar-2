@@ -25,6 +25,11 @@
         - ComXf
         - E2EXf
 1. Click **Finish**
+
+### If there are added Rx signal group
+### Com > Signal Group
+1. Select added Rx signal groups
+1. fill in Notification & Timeout Notification with **Bulk Change**
 ***
 
 ## Port Configuration

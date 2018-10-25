@@ -19,6 +19,12 @@
     * Parameter to change: ComNotification & ComTimeoutNotification
     * Check **Ignore Common String**
 
+## ~~ComXf & E2EXf~~
+Should check Signal Group using E2E is mapped to Data prototype
+
+### E2EXf, ComXf > Implementation Mapping
+Check each signal group has a **Variable Data Prototype Instance Ref**
+
 ## Cautions
 * Data types MUST be implemented with Send/Receive access
 * Not Read/Write access

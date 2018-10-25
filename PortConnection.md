@@ -12,5 +12,5 @@ If empty, fill it with bulk change (patterned change)
 ### EcuComposition > Automatic Connection
 1. Click on **Add all** for overall auto-connection, or Select ports and Click Plus (topright) for individual connection
 ### EcuComposition > Assembly Connectors
-1. Go to above, then Dangling Connectors pop-up will be shown
+1. Go to above tab, then Dangling Connectors pop-up will be shown
 1. Click on OK button
