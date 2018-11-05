@@ -9,8 +9,11 @@ Check Notification & Timeout Notification column for **Required Messages** are e
 If empty, fill it with bulk change (patterned change)
 
 ## Inter SWC
-### EcuComposition > Automatic Connection
+### CSWC_RootComposition > Automatic Connection
 1. Click on **Add all** for overall auto-connection, or Select ports and Click Plus (topright) for individual connection
-### EcuComposition > Assembly Connectors
+### CSWC_RootComposition > Assembly Connectors
 1. Go to above tab, then Dangling Connectors pop-up will be shown
 1. Click on OK button
+### EcuExtract > Overview
+1. Click **ECU Software Components Mapping**
+1. Check changes and click OK
