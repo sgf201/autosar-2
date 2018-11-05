@@ -1,6 +1,6 @@
 # RTE, OS
 
-## Adding SWC
+## Adding SWC instance
 ### Configuration > System > Swcd_App
 1. ARXML file(App_NAME.arxml) with ARRoot
 1. Add *Application Sw Component Type*
@@ -23,25 +23,25 @@
 1. Click OK and check changes
 
 
-## Assigning Core
+## SWC registration (Assigning Core, Task, Alarm)
 ### EcuC module > All Contents
 1. EcuC -> EcucPartitionCollection > Ecuc Partition
 1. Add to *Software Component Instance Ref*
 
 ### Os module
-Task tab > Create task  
-Alarm tab > configure alarm  
-Application tab  
-1. Double click on OsApplication_X
-1. Click Browse of *App Alarm Ref*
-1. Add OsAlarm
-1. Click Browse of *App Task Ref*
-1. Add Task
+* Go to *Task tab*, create task  
+* Go to *Alarm tab*, configure alarm  
+* Application tab  
+    1. Double click on OsApplication_X
+    1. Click Browse of *App Alarm Ref*
+    1. Add OsAlarm
+    1. Click Browse of *App Task Ref*
+    1. Add Task
 
 ### Rte module
 Sw Component Instance tab
 1. Add SwcInstance reference
-1. **Path to reference should be start with ECU_EXTRACT, not AUTOSAR/CSWC_RootComposition**
+1. **Path to reference** should start with ECU_EXTRACT, not AUTOSAR/CSWC_RootComposition**
 1. Right click, then click *RteEventToTaskMapping*
 1. Go to added Event To Task Mapping
 1. Set **Event Ref**, **Mapped To Task Ref** and **Used Os Alarm Ref** with pre-configured references
