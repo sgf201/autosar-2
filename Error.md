@@ -10,6 +10,19 @@ In order to use IOC interface, ARXML including Implementation data type should b
 #### Build > Generate.py
 1. Register coreesponding ARXML in Os_Common
 
+### ERR 6061
+    Port in XfrmImplementationMapping is empty or invalid.
+
+    [Avoidance Guide]
+    Port in XfrmImplementationMapping shall be set with valid Port path.
+
+    [Configuration Info] XfrmImplementationMapping
+    Path: /EcucModules/ComXf/ComXf_MsgGr_E2E_CCANFD_ADAS_PRK_21_20ms
+    File: Configuration\Ecu\Ecud_ComXf.arxml
+
+#### ComXf and E2EXf modules
+1. Click Validation
+1. Re-implement the **Variable Data Prototype Instance Ref**
 
 ### ERR 0838
     ComNotification<> in

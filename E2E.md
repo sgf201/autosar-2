@@ -19,6 +19,40 @@
     * Parameter to change: ComNotification & ComTimeoutNotification
     * Check **Ignore Common String**
 
+!! When want to remap the existing E2E data mapping to another
+1. disconnect the all related ports
+1. harmonize
+1. do 
+
+## Rx Signal Group
+
+## AppTransformer
+### Ports tab
+1. Add receiver ports
+1. Add sender ports
+
+### Runnables
+1. Go to *Data / Parameter Access*
+1. Add data access for both Sender and Receiver ports
+
+## EcuExtract
+1. Data Mapping
+
+## SWC_XX
+1. Create Receiver port
+1. Add data access
+
+### CSWC_RootComposition
+1. 
+
+### EcuExtract
+* ECU Software Components Mapping
+
+***
+
+## Tx Signal Group
+***
+
 ## ~~ComXf & E2EXf~~
 Should check Signal Group using E2E is mapped to Data prototype
 
