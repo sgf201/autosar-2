@@ -53,9 +53,14 @@
 
 ## Data Mapping
 
-## E2E
-### Build > Generate.py
-1. add ARXML file name
+## Making Callback function
+1. Go to SWC
+1. Make receiver port
+1. Make runnable
+1. Rename the runnable
+1. Set the RTE Event w/ DRE & DREE
+1. Set **Alive Timeout**
+    * Should be matched to **Timeout** in Com module 
 ***
 
 ## Caution!

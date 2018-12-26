@@ -37,6 +37,7 @@ Go to All Contents and
 1. Add to *Software Component Instance Ref*
 
 ### Os module
+**Sequence: Event or Alarm > Task > Application**
 * Go to *Task tab*, create task  
 * Go to *Alarm tab*, configure alarm  
 * Application tab  

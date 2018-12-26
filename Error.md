@@ -121,3 +121,16 @@ In order to use IOC interface, ARXML including Implementation data type should b
     * Append newly imported DB ARXML
 1. ComXf
     * Append newly imported DB ARXML and App using E2E Signal group
+
+
+### E286
+    ctc E286: ["Generated\Bsw_Output\src\Dem_Cfg.c" 10060/63] array size shall be greater than zero
+    1 errors, 0 warnings
+    scons: *** [Debug\Generated\Bsw_Output\src\Dem_Cfg.o] Error 1
+
+1. Go to Dem_Cfg.c
+1. check Configured NvBlockLength & Valid NvBlockLength
+1. Go to NvM module
+1. put in checked BlockLength
+1. Go to Fee module
+1. put in Block length + 2

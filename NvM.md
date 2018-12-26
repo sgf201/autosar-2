@@ -11,16 +11,36 @@ Modules to be configured
 ### Block Descriptor tab
 1. add nvMBlockDescriptor
 1. Set the below items
-    * Short Name
-    * Block Crc Type
-    * Block Use Crc
-    * Block Management Type
-    * and so on...
+    * Continer Details
+        * Block Use Crc
+        * Calc Ram Block Crc
+        * Max Num Of Read Retries
+        * Max Num Of Write Retries
+        * Select Block For Read All
+        * Select Block For Write All
+    * To Be Configured
+        * Block Crc Type
+        * Block Management Type
+        * Nv Block Base Number
+        * Nv Block Length
+        * Nv Block Num
+        * Nvram Block Identifier
+        * Ram Block Data Address
+        * Rom Block Data Address
+        * Rom Block Num
+        * Single Block Callback
+        * Write Verification Data Size
 1. right click on block descriptor, and then click NvMTargetBlockReference
     * jump to NvMTargetBlockReference (automatically)
     * Choose Ea or Fee (Normally Fee Ref)
         * jump to NvMFeeRef (automatically)
         * click Browse and select appropriate FeeBlock
+
+## Caution!
+* NvMNvBlockBaseNumber should be equal to right shifted FeeBlockNumber
+* There should be **no unmapped FeeBlock**
+* FeeBlockLength should be greater than NvMBlockLength (normally, +2)
+***
 
 ### Concept
 Block: 
@@ -40,11 +60,18 @@ Block:
 
 ## SWC_NvM
 ### Ports tab
-1. add Port with desired interface
+1. add Port with desired interface (server-client)
 1. rename
 1. In Communication Spec, select desired operation then enable Com Specs
 
 ### Runnables tab
-1. Click *Operation / Mode ? Trigger Access*
-1. Add enabled operations
+1. Click *Operation / Mode / Trigger Access*
+1. Add enabled operations to **Synchronous Server Call Points**
+
+## EcucVallueCollection
+### Service and I/O tab
+1. Select Svc and desired ports
+1. Click add
+1. Uncheck *Respecting Naming Rules*
+1. Mapping with proper service name
 ***
