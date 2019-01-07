@@ -23,10 +23,12 @@
 1. Click OK and check changes
 
 ### EcuC module
-Go to All Contents and
-* EcuC
-    * EcucPartitionCollection
-        * *EcucPartition*
+1. Go to All Contents
+1. Expand to
+    * EcuC
+        * EcucPartitionCollection
+            * *EcucPartition*
+1. Register added SWC_XXX to EcucPartition
 
 **Assign to desired Core**
 ***

@@ -97,6 +97,32 @@ In order to use IOC interface, ARXML including Implementation data type should b
 1. Check whether there are broken connections or not
 1. Remove broken connections
 
+### ERR 2015
+    ERR 2015: [Error Description]
+    The ContextPortRef in VariableDataPrototypeInSystemInstanceRef is not
+    configured or invalid.
+
+    SenderReceiverToSignalGroupMapping</ECU_EXTRACT/EcuExtract/DataMappings>
+    SystemSignalGroupRef:
+    /DBCImport/SYSSIGNALGROUPS/MsgGr_E2E_CCANFD_CLU_13_00ms
+    ContextComponentRef: /ECU_EXTRACT/EcuComposition/SWC_AppTransformer
+    ContextPortRef:
+    /App_Transformer/SWC_AppTransformer/Gr_MsgGr_E2E_CCANFD_CLU_13_00ms
+    TargetDataPrototypeRef:
+    /DBCImport/INTERFACES/Gr_MsgGr_E2E_CCANFD_CLU_13_00ms/MsgGr_E2E_CCANFD_CLU_13_00ms
+
+    [Avoidance Guide]
+    Check whether the ContextPortRef in
+    VariableDataPrototypeInSystemInstanceRef is configured or the
+    referenced value is correct.
+
+    [Configuration Info] VariableDataPrototypeInSystemInstanceRef
+    Path: /ECU_EXTRACT/EcuExtract/DataMappings
+    File: Configuration\System\Composition\EcuExtract.arxml
+
+#### EcuExtract > Data Mappings
+1. Click Validation at top right
+1. Check and OK
 ---
 
 ## Compile Error
