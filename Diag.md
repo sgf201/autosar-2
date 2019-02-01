@@ -23,13 +23,17 @@
 1. Go to DIagnosticMonitor runnable > Operation / Mode / Trigger Acces
 1. Add *.SetEventStatus to Synchronous Server Call Points
 
+## Service configuration
+
+### Run Build and then, Services will be generated!
+
 ### EcucValueCollection > Service and I/O
 1. Click Dem
 1. Select Event_DEM_E_UDS_DTC_ 
 1. Click **add** at top right
 1. Check and Connect
 
-## Extended Data
+### Extended Data
 1. Set extended data in Dem module
 1. Generate Swc
 

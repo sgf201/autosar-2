@@ -123,6 +123,53 @@ In order to use IOC interface, ARXML including Implementation data type should b
 #### EcuExtract > Data Mappings
 1. Click Validation at top right
 1. Check and OK
+
+### ERR060051
+    ERR060051: The reference path
+            </AUTOSAR/EcuC/EcucPduCollection/Pdu_XcpPdu_CCANFD_ADAS_DRV_CCP1_CRO>
+            provided for the parameter 'CanIfRxPduRef' in the container
+            'CanIfRxPduCfg' is not found in
+            <OSEK_NM/CAN_NM/CAN_TP/J1939TP/PDUR/CDD/XCP>.
+            File Name: Configuration\Ecu\Ecud_CanIf.arxml
+    ERR060051: The reference path
+            </AUTOSAR/EcuC/EcucPduCollection/Pdu_XcpPdu_CCANFD_ADAS_DRV_CCP1_DTO>
+            provided for the parameter 'CanIfTxPduRef' in the container
+            'CanIfTxPduCfg' is not found
+            <OSEK_NM/CAN_NM/CAN_TP/CDD/J1939TP/PDUR/XCP>.
+
+#### EcucValueCollection
+1. Harmonize with belows
+* All Modules
+    * Diagnostic
+        * Dcm
+    * Service
+        * Xcp
+
+1. Regenerate Handle IDs with belows
+* All Modules
+    * Diagnostic
+        * Dcm
+    * Service
+        * Xcp
+
+#### Xcp Module
+1. Go to Pdu Tab
+1. Select right Pdu reference
+
+#### Dcm Module
+1. Go to Dsl Tab
+1. Expand to 
+    * DcmDsl
+        * Dcm_DiagCom_Protocol
+            * Row
+1. Select right Pdu reference
+    * Select DcmIPdu, not NPdu
+
+#### PduR Module
+1. Go to Routing Tables
+1. Sort by short Name
+1. Select Rx/Tx messages and deselect diag message
+1. Bulk change
 ---
 
 ## Compile Error
@@ -157,6 +204,6 @@ In order to use IOC interface, ARXML including Implementation data type should b
 1. Go to Dem_Cfg.c
 1. check Configured NvBlockLength & Valid NvBlockLength
 1. Go to NvM module
-1. put in checked BlockLength
+1. put *Valid NvBlockLength* in *Nv Block Length*
 1. Go to Fee module
 1. put in Block length + 2
