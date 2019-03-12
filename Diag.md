@@ -15,6 +15,14 @@
     * DTC Class Ref
     * Operation Cycle Ref
 
+## Primary Memory settings
+1. NvM module
+    1. add memory for DTC save
+1. Dem module
+    1. All contents > DemGeneral0 > DemNvRamBlockId
+    1. add primary event memory
+    1. Set *Nv Block Id Ref*
+
 ## SWC configuration
 ### Swcd_App > App_Dem
 1. Go to Ports tab

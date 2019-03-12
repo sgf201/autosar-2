@@ -154,7 +154,7 @@ In order to use IOC interface, ARXML including Implementation data type should b
 
 #### Xcp Module
 1. Go to Pdu Tab
-1. Select right Pdu reference
+1. Select appropriate Pdu reference
 
 #### Dcm Module
 1. Go to Dsl Tab
@@ -168,6 +168,9 @@ In order to use IOC interface, ARXML including Implementation data type should b
 #### PduR Module
 1. Go to Routing Tables
 1. Sort by short Name
+1. Bulk change
+1. Select Diag message
+1. Matching handle ID 
 1. Select Rx/Tx messages and deselect diag message
 1. Bulk change
 ---
@@ -204,6 +207,6 @@ In order to use IOC interface, ARXML including Implementation data type should b
 1. Go to Dem_Cfg.c
 1. check Configured NvBlockLength & Valid NvBlockLength
 1. Go to NvM module
-1. put *Valid NvBlockLength* in *Nv Block Length*
+1. put in checked BlockLength
 1. Go to Fee module
 1. put in Block length + 2
